@@ -8,12 +8,14 @@ services:
     ports:
       - "8080:8080"
     command: uvicorn main:app --host 0.0.0.0 --port 8080  --reload
-    env_file: ".env_example"
+    env_file: ".env"
     depends_on:
       - db
 
   db:
     image: postgres:latest
     ports:
-      - "5432:5432"
-    env_file: ".env_example"
+      - "5433:5432"
+    expose:
+      - 5433
+    env_file: ".env"
