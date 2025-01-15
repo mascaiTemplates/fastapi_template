@@ -10,7 +10,7 @@ POSTGRES_USER=user123
 POSTGRES_PASSWORD=pass123
 POSTGRES_DB=dbname
 DB_HOST=127.0.0.1
-DB_PORT=5433
+PGPORT=5432
 
 2) Build and run containers
 docker-compose up --build -d
