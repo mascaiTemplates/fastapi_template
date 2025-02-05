@@ -7,10 +7,10 @@ from schemas.users import UserSchema, BaseUserSchema
 from database.session import get_db
 from api.v1.users import users_router
 
-app = FastAPI()
-app.include_router(users_router)
+application = FastAPI()
+application.include_router(users_router)
 
-@app.get("/health_check")
+@application.get("/health_check")
 def health_check():
     return {"Hello": "World"}
 

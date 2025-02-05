@@ -13,3 +13,5 @@ typing_extensions==4.12.2
 uvicorn==0.34.0
 psycopg2-binary==2.9.10
 sqlAlchemy==2.0.35
+pytest==8.3.4
+httpx==0.28.1
