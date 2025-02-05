@@ -2,6 +2,7 @@
 
 ### Aim - speed ​​up development with help of a simple and well-designed template
 
+Tech stack: FastAPI + SQLAlchemy + Alembic + Postgres + DockerCompose 
 
 ### How to build and run
 ```
