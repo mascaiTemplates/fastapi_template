@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8080:8080"
-    command: uvicorn main:app --host 0.0.0.0 --port 8080  --reload
+    command: uvicorn main:application --host 0.0.0.0 --port 8080  --reload
     env_file: ".env"
     volumes:
     - ./app/alembic/versions/:/app/alembic/versions/
