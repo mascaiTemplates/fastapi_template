@@ -10,7 +10,7 @@ Tech stack: FastAPI + SQLAlchemy + Alembic + Postgres + DockerCompose
 POSTGRES_USER=user123
 POSTGRES_PASSWORD=pass123
 POSTGRES_DB=dbname
-DB_HOST=127.0.0.1
+DB_HOST=db (or 127.0.0.1 for local development)
 PGPORT=5432
 
 2 Build and run containers
@@ -20,6 +20,7 @@ docker-compose up --build -d
 
 ### How to create and apply database migrations
 ```
+docker exec -ti  fastapi_template_backend-api_1 bash
 alembic revision --autogenerate -m "migration name"
 alembic upgrade head
 ```
